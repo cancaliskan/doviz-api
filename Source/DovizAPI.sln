@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DovizAPI", "DovizAPI\DovizAPI.csproj", "{18B0EB1F-D466-4D5A-99C6-9E43F1203CF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18B0EB1F-D466-4D5A-99C6-9E43F1203CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B0EB1F-D466-4D5A-99C6-9E43F1203CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B0EB1F-D466-4D5A-99C6-9E43F1203CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B0EB1F-D466-4D5A-99C6-9E43F1203CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {322049A0-A145-4BB5-AE10-A1B8BC42B0AD}
+	EndGlobalSection
+EndGlobal
