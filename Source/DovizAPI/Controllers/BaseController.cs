@@ -1,5 +1,7 @@
 ﻿using System;
-
+using System.Net;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 using HtmlAgilityPack;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -14,8 +16,19 @@ namespace DovizAPI.Controllers
         private static HtmlDocument _document;
         public BaseController()
         {
-            var web = new HtmlWeb();
-            _document = web.Load(BaseUrl);
+            try
+            {
+                ServicePointManager.ServerCertificateValidationCallback = delegate (object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+                {
+                    return true;
+                };
+                var web = new HtmlWeb();
+                _document = web.Load(BaseUrl);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Exception = " + e.Message);
+            }
         }
 
         protected static string FillModel(BaseCurrencyModel model, string xPathForBuying, string xPathForSelling, string xPathForLastUpdate)

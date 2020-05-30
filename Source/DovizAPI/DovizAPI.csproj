@@ -6,6 +6,10 @@
     <UserSecretsId>d58b0e1d-69d1-4199-ac56-0fbeb4628722</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup>
+  <RuntimeIdentifiers>linux-x64</RuntimeIdentifiers>
+</PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.23" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
