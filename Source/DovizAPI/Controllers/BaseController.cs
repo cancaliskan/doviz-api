@@ -46,7 +46,7 @@ namespace DovizAPI.Controllers
         {
             var buyingPrice = _document.DocumentNode.SelectSingleNode(xPathForBuying).InnerText;
             var sellingPrice = _document.DocumentNode.SelectSingleNode(xPathForSelling).InnerText;
-            var lastUpdate = DateTime.Now.ToString("HH:mm:ss");//_document.DocumentNode.SelectSingleNode(xPathForLastUpdate).InnerText;
+            var lastUpdate = DateTime.Now.ToUniversalTime().AddHours(3).ToString("HH:mm:ss");//_document.DocumentNode.SelectSingleNode(xPathForLastUpdate).InnerText;
 
             var prices = new BuyingAndSellingPriceModel { BuyingPrice = buyingPrice, SellingPrice = sellingPrice, LastUpdate = lastUpdate };
 
